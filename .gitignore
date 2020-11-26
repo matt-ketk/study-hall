@@ -1,0 +1,11 @@
+# remove autosaves
+*~
+
+vimtex/
+*.xopp.autosave
+
+# remove python cache files
+
+__pycache__/
+*.py[cod]
+*$py.class
