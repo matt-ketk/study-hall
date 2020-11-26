@@ -1,0 +1,51 @@
+\RequirePackage{fancyhdr}
+\RequirePackage{amsmath, amssymb}
+\RequirePackage{/home/mattketk/texmf/todocfg}
+
+
+% Environments
+\newenvironment{boxing}
+    {\begin{center}
+    \begin{tabular}{|p{0.9\textwidth}|}
+    \hline\\
+    }
+    {
+    \\\\\hline
+    \end{tabular}
+    \end{center}
+    }
+
+\newcounter{theoremcounter}
+\newenvironment{theorem}
+    {
+        \begin{boxing}
+        \refstepcounter{theoremcounter}
+        \textbf{Theorem \thetheoremcounter.}
+    }
+    {
+        \end{boxing}
+    }
+
+\newcounter{definitioncounter}
+\newenvironment{definition}
+    {
+        \begin{boxing}
+        \refstepcounter{definitioncounter}
+        \textbf{Definition \thedefinitioncounter.}
+    }
+    {
+        \end{boxing}
+    }
+
+\newcounter{examplecounter}
+\newenvironment{example}
+    {
+        \begin{boxing}
+        \refstepcounter{examplecounter}
+        \textbf{Example \theexamplecounter.}
+    }
+    {
+        \end{boxing}
+    }
+
+
