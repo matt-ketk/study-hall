@@ -78,7 +78,7 @@ snippet amathwriteup "Begin A MATH 301 writeup" b
 \usepackage{/home/mattketk/texmf/amath_writeup}
 
 \begin{document}
-\title{{AMATH 301 -- Autumn 2020\\
+\title{{AMATH 301 -- Autumn 2020\\\\
 	{\bf \Huge Homework $1 Writeup}}
 }
 
@@ -555,6 +555,16 @@ priority 300
 context "math()"
 snippet dint "integral" wA
 \int_{${1:-\infty}}^{${2:\infty}} ${3:${VISUAL}} $0
+endsnippet
+
+context "math()"
+snippet lapl "Laplace Transform" wA
+\mathcal{L}\left\\{${1:y(t)}\right\\}
+endsnippet
+
+context "math()"
+snippet ilapl "Laplace Transform" wA
+\mathcal{L}^{-1}\\left\\{${1:y(t)}\right\\}
 endsnippet
 
 priority 200
